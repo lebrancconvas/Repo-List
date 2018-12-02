@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lebranc Convas Repository</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="static/img/github.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/index.css" />
+</head>
+<body>
+    <div id="app">
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+        <h1>{{username}}'s Repository</h1>
+        <div class="search-box">
+            &nbsp;&nbsp;Username Search: <input :value="username" @input="usernameChange($event)" type="text" class="inp">
+        </div>
+        <!-- <div class="404">
+            <a href="localhost:2020/nuff">
+                <button>404</button>
+            </a>
+        </div> -->
+        <div v-if="loading">
+            <p class="load">
+                กำลัง Loading อยู่นะจ๊ะ<br>
+                รอแปปนึงน้าา~~ ^^
+            </p> 
+        </div>
+        <div>
+            <ul>
+                <div class="card">
+                    <repo-list v-for="repo in repos" :repo="repo" class="list">
+                        Blanking...
+                    </repo-list>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex@3.0.1/dist/vuex.js"></script>
+    <script src="static/js/index.js"></script>
+</body>
+</html>

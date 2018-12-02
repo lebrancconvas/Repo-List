@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(223, 248, 195);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* text-align: center; */
+    margin: auto;
+    /* display: block; */
+}
+
+.search-box {
+    margin: 10px;
+    font-size: 20px;
+    width: 30%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(50, 255, 118);
+    background: rgb(54, 216, 95);
+}
+
+.load {
+    text-align: center;
+    font-size: 40px;
+    margin: 30vh;
+}
+
+/* .card {
+    margin: 20px;
+    width: 20%;
+    height: 50%;
+    position: relative;
+    background: green;
+    box-shadow: 3px 3px greenyellow;
+    border-radius: 20px;
+} */
+
+.inp {
+    margin: 10px;
+    border-radius: 0px;
+    box-shadow: 2px 2px grey;
+}
+
+.list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    width: 20%;
+    height: 50%;
+    position: relative;
+    font-size: 17px;
+    background: #53bbf8;
+    border-radius: 25px;
+    box-shadow: 5px 5px grey;
+    text-align: center;
+    display: auto;
+    transform: scale(1)
+}
+
+.list:active {
+    transform: scale(.97)
+}
